@@ -23,14 +23,10 @@ jobs:
             suffix: ''
             description: 'Main branch'
             image_url: 'https://github.com/oss-review-toolkit/ort'
-          - ref: 'refs/pull/6053/merge'
-            suffix: '-pr-6053'
-            description: 'docker: Build and run as a non-privileged user'
-            image_url: 'https://github.com/oss-review-toolkit/ort/pull/6053'
-          - ref: 'refs/pull/6075/merge'
-            suffix: '-pr-6075'
-            description: 'docker: Prepare base layer to non privileged user'
-            image_url: 'https://github.com/oss-review-toolkit/ort/pull/6075'
+          - ref: 'refs/pull/6225/merge'
+            suffix: '-pr-6225'
+            description: 'docker: Build components and run as (ort) user instead of root'
+            image_url: 'https://github.com/oss-review-toolkit/ort/pull/6225'
     name: containerize
     runs-on: ubuntu-latest
     steps:
